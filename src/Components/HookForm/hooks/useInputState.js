@@ -9,7 +9,11 @@ const useInputState = (defaultValue = null) => {
   //   const handleChange = (e) => {
   //     setValue(e.target.value);
   //   };
-  return [value, onChange];
+  // return [value, onChange];
+  return {
+    value,
+    onChange,
+  };
 };
 
 export default useInputState;
