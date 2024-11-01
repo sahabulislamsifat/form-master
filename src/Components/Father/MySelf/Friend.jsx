@@ -1,15 +1,14 @@
 import { useContext } from "react";
 import { AssetContext } from "../../GrandFather/GrandFather";
 
-const Special = ({ assets }) => {
+const Friend = () => {
   const gift = useContext(AssetContext);
   return (
     <div>
-      <h3>Special</h3>
-      <p>Has: {assets}</p>
-      <p>also has: {gift}</p>
+      <h3>Friend</h3>
+      <p>has also: {gift}</p>
     </div>
   );
 };
 
-export default Special;
+export default Friend;
